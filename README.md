@@ -42,3 +42,5 @@ abaqus-models.zip: input files created by running Script-generateModels.py
 StrainStressData.zip: strain-stress data (txt files) of all the jobs from running the above input files
 
 damagePatterns.zip: damage images of 0-dgree ply (ply 4 of the layup definition) fiber tensile damage ('DAMAGEFT' variable in Abaqus)
+
+ANN-StrainStress.ipynb: jupyter notebook (run in Colab) to read StrainStressData from Google Drive, then train a Keras Tensorflow NN model. Before running this notebook, first download the StrainStressData.zip and unzip it in your Colab Notebooks folder. The notebook will ask to mount your Google Drive, which will require your authorization (remember to allow pop-ups from Colabo website).
