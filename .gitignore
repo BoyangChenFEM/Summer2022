@@ -188,3 +188,4 @@ pyrightconfig.json
 
 todo*
 .DS_Store
+.vscode/
