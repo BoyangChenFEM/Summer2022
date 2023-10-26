@@ -1,0 +1,6 @@
+autopep8==2.0.4
+ipyparams==0.2.1
+numpy==1.26.1
+pyabaqus==2022
+pycodestyle==2.11.1
+tomli==2.0.1
