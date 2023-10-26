@@ -11,7 +11,13 @@ from abaqusConstants import *
 import material
 
 def formCompositeMaterial(currentModel, materialChoice, eta_vr=1.e-5):
-# eta_vr - viscous parameter for damage regularization (unit: time), default=1.e-5
+    """Composite material specifications for Abaqus
+
+    Args:
+        currentModel (mdb.Model): Abaqus model
+        materialChoice (string): material specifier
+        eta_vr (float, optional): viscous parameter for damage regularization (unit: time). Defaults to 1.e-5.
+    """
     if materialChoice == 'IM7-8552':
         currentModel.Material(name=materialChoice)
         currentModel.materials[materialChoice].Elastic(table=((161000.0, 11000.0, 11000.0, 0.32, 0.32, 0.45,
